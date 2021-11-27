@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+        <com.weijun.turntableview.TurnTableView
+            android:id="@+id/ttv"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginEnd="36dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/icon_turntable_bg"
+            app:turntable_normal_res_id="@layout/adapter_turntable_normal"
+            app:turntable_progress_res_id="@layout/adapter_turntable_progress"
+            app:turntable_progress_max="500"
+            app:turntable_progress_current="90"
+            app:turntable_turn_times="5"
+            app:turntable_turn_duration="3000"
+            app:turntable_mode="MODE_NINE"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnStart"
+            android:text="start"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</layout>

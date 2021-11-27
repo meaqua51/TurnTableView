@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clroot"
+    android:background="@drawable/icon_turntable_progress_bg"
+    android:layout_margin="3dp">
+
+    <ImageView
+        android:layout_width="53dp"
+        android:layout_height="47dp"
+        android:id="@+id/ivGiftLogo"
+        android:src="@drawable/icon_turntable_gift_logo"
+        android:layout_marginTop="7dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="20抽/100抽"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        android:gravity="center"
+        android:layout_below="@+id/ivGiftLogo"
+        android:layout_marginTop="4dp"
+        android:id="@+id/tvProgress"
+        />
+
+    <RelativeLayout
+        android:layout_width="74dp"
+        android:layout_height="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvProgress">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/progress_turntable_energy"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:id="@+id/ivProgress"
+            android:layout_margin="1dp"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_turntable_progress_right"
+            android:scaleType="fitXY"
+            android:layout_margin="1dp"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/ivRight"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

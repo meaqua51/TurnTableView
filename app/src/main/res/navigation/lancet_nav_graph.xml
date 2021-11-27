@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lancet_nav_graph"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        tools:layout="@layout/fragment_first"
+        android:id="@+id/firstFragment"
+        android:name="com.meaqua.turntableview.fragment.FirstFragment"
+        android:label="first" />
+
+    <fragment
+        tools:layout="@layout/fragment_second"
+        android:id="@+id/secondFragment"
+        android:name="com.meaqua.turntableview.fragment.SecondFragment"
+        android:label="second" />
+
+    <fragment
+        tools:layout="@layout/fragment_third"
+        android:id="@+id/thirdFragment"
+        android:name="com.meaqua.turntableview.fragment.ThirdFragment"
+        android:label="third" />
+
+    <fragment
+        tools:layout="@layout/fragment_fourth"
+        android:id="@+id/fourthFragment"
+        android:name="com.meaqua.turntableview.fragment.FourthFragment"
+        android:label="fourth" />
+
+</navigation>

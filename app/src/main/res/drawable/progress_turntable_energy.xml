@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    &lt;!&ndash;背景效果(灰色)&ndash;&gt;-->
+<!--    <item android:id="@android:id/background">-->
+<!--        <shape>-->
+<!--            <corners android:radius="40dp" />-->
+<!--            <solid android:color="#7A27FE"/>-->
+<!--        </shape>-->
+
+<!--    </item>-->
+
+
+    <item>
+        <shape >
+            <solid android:color="#4DD1AD"  android:width="0dp"/>
+            <gradient
+                android:angle="180"
+                android:startColor="#FFCB00"
+                android:endColor="#89F6F0"
+                />
+            <corners
+                android:bottomLeftRadius="22dp"
+                android:bottomRightRadius="22dp"
+                android:topLeftRadius="22dp"
+                android:topRightRadius="22dp" />
+
+        </shape>
+    </item>
+
+    <item
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp">
+        <shape>
+            <solid android:color="#7A27FE"  android:width="0dp"/>
+            <corners
+                android:bottomLeftRadius="22dp"
+                android:bottomRightRadius="22dp"
+                android:topLeftRadius="22dp"
+                android:topRightRadius="22dp" />
+        </shape>
+    </item>
+
+    <!--第一进度条背景（渐变），clip：裁剪进度条右侧部分-->
+    <item android:id="@android:id/progress"
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp">
+        <scale android:scaleWidth="100%"
+            android:drawable="@drawable/progress_turntable_energy_bg"   />
+<!--        <clip>-->
+<!--            <shape>-->
+<!--                <corners android:radius="40dp" />-->
+<!--                <solid android:color="#FFCB00" />-->
+<!--&lt;!&ndash;                <gradient&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:angle="180"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:endColor="#89F6F0"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:startColor="#FFCB00" />&ndash;&gt;-->
+<!--            </shape>-->
+<!--        </clip>-->
+    </item>
+
+</layer-list>

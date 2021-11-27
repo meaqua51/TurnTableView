@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TurnTableView">
+        <attr name="turntable_normal_res_id" format="reference" />
+        <attr name="turntable_progress_res_id" format="reference" />
+        <attr name="turntable_progress_max" format="integer" />
+        <attr name="turntable_progress_current" format="integer" />
+        <attr name="turntable_turn_times" format="integer" />
+        <attr name="turntable_turn_duration" format="integer" />
+        <attr name="turntable_mode" format="integer">
+            <enum name="MODE_NINE" value="8" />
+            <enum name="MODE_TEN" value="10" />
+        </attr>
+    </declare-styleable>
+</resources>
