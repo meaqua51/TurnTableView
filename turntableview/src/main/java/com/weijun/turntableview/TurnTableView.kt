@@ -14,8 +14,6 @@ import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.SimpleItemAnimator
-import com.chad.library.adapter.base.BaseMultiItemQuickAdapter
-import com.chad.library.adapter.base.viewholder.BaseViewHolder
 import java.lang.ref.WeakReference
 
 /**
@@ -220,7 +218,7 @@ class TurnTableView<T:TurnTableModel> :FrameLayout {
         }
     }
 
-    inner class TurntableAdapter: BaseMultiItemQuickAdapter<T, BaseViewHolder>() {
+    inner class TurntableAdapter: BaseMultiItemSimpleAdapter<T, BaseViewHolder>() {
 
         init {
             addItemType(TURNTABLE_NORMAL, mResNormalId)
